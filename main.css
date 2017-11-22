@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;    
 }
 
 #interactions {
@@ -17,13 +17,11 @@ body {
     margin-right: 2px;
     border-radius: 2px;
     text-align-last: center;
+    transition: all .1s;
+    -webkit-transition: all .2s;
 }
 
-.selector:hover {
-    color: #3a3939;
-    border: 1px solid #3a3939;
-    box-shadow: 4px 4px 2px #3a3939;
-}
+.selector:hover,
 .selector:active,
 .selector:focus {
     box-shadow: 0px 0px 0px #3a3939;
@@ -32,6 +30,9 @@ body {
     border-width: 4px;
     font-weight: bold;
     color: white;
+}
+.selector:hover {
+    background-color: #FF8B00;
 }
 
 .active {
@@ -61,24 +62,39 @@ nav .selector {
     display: inline-block;
     position: relative;
     width:39.5%;
-    left: 4px;
+    left: 3px;
     min-height: 700px;
-    background-color: rgba(241, 238, 238, 0.472);
 
 }
 
 #scatter_plot {
     min-width: 700px;
     min-height: 700px;
-    background-color: rgba(241, 238, 238, 0.472);
 }
 
 #joke_content {
     text-align: center;
     margin-top: -20px;
-    background-color: rgba(241, 238, 238, 0.472);
 }
 
 #joke_content table {
     text-align: left;
+}
+
+.text_input {
+    font-family: 'Montserrat' sans-serif;
+    font-size: 20px;
+    height: 35px;
+    border-radius: 2px;
+    margin: 0px 10px 10px 0px;
+    background-color: transparent;
+    padding-left: 10px;
+    width: 90%;
+    text-align: center;
+}
+
+.text_input:active,
+.text_input:focus {
+    background-color: #007EFF;
+    color: white;
 }

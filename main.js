@@ -41,14 +41,17 @@ function switch_size_mapping(to) {
 
 $(document).ready(function() {
     // setup selectors
-
+    
 
     // load jokes
     $.getJSON('data/reddit_jokes.json', function(data) {
+        
+        // put the jokes in a global array
         data.forEach(function(d) {
             joke_set.push([d.score, d.title, d.body, d.id])
         })
 
+        // setup up the jokes table
         $('#jokes_table').DataTable({
             data: joke_set,
             columns: [
@@ -57,5 +60,12 @@ $(document).ready(function() {
                 { title: "body" }
             ]
         })
+        
+        // make the search input look good
+        search_bar = $('.dataTables_filter input[type="search"]')
+            .addClass('text_input')
+        $('.dataTables_filter').attr('style', 'width:100%;text-align:center')
+    
+        $('.dataTables_length').remove()
     });
 })
