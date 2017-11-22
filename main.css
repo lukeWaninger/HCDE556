@@ -1,0 +1,75 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#interactions {
+    background-color: rgba(241, 238, 238, 0.472);
+}
+
+.selector{
+    font-family: 'Montserrat';
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    width: 120px;
+    border: 1px solid #3a3939;
+    box-shadow: 2px 2px 1px #3a3939;
+    margin-right: 2px;
+    border-radius: 2px;
+    text-align-last: center;
+}
+
+.selector:hover {
+    color: #3a3939;
+    border: 1px solid #3a3939;
+    box-shadow: 4px 4px 2px #3a3939;
+}
+.selector:active,
+.selector:focus {
+    box-shadow: 0px 0px 0px #3a3939;
+    background-color: #007EFF;
+    border-radius: 2px;
+    border-width: 4px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    padding: 5px 10px 10px 10px;
+}
+
+nav .selector {
+    margin: 0px 20px;
+}
+
+#content_left {
+    display: inline-block;
+    width: 60%;
+}
+
+#content_right {
+    display: inline-block;
+    position: relative;
+    width:39.5%;
+    left: 4px;
+    min-height: 700px;
+    background-color: rgba(241, 238, 238, 0.472);
+
+}
+
+#scatter_plot {
+    min-width: 700px;
+    min-height: 700px;
+    background-color: rgba(241, 238, 238, 0.472);
+}
+
+#joke_content {
+    text-align: center;
+    margin-top: -20px;
+    background-color: rgba(241, 238, 238, 0.472);
+}
+
+#joke_content table {
+    text-align: left;
+}
