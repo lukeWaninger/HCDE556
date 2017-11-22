@@ -16,8 +16,17 @@ function switch_topic(position, to) {
 // parameters
 // -------------------------------------------------------
 // selection : int {0 <- words, 1 <- jokes} : default: 0
-function switch_filter(selection) {
+function switch_word_joke_filter(selection) {
+    $('.word_joke_selector').removeClass('active')
+    // configure for words
+    if (selection === 0) {
+        $('#word_selector').addClass('active')        
+    }
 
+    // configure for jokes
+    else if (selection === 1) {
+        $('#joke_selector').addClass('active')  
+    }
 }
 
 
@@ -31,7 +40,8 @@ function switch_size_mapping(to) {
 
 
 $(document).ready(function() {
-    // setup topic selectors
+    // setup selectors
+
 
     // load jokes
     $.getJSON('data/reddit_jokes.json', function(data) {

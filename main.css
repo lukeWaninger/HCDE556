@@ -34,6 +34,15 @@ body {
     color: white;
 }
 
+.active {
+    box-shadow: 0px 0px 0px #3a3939;
+    background-color: #007EFF;
+    border-radius: 2px;
+    border-width: 4px;
+    font-weight: bold;
+    color: white;
+}
+
 nav {
     text-align: center;
     padding: 5px 10px 10px 10px;

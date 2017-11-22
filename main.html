@@ -24,7 +24,7 @@
 
 <body>
     <nav id="interactions">
-        <select id="topic_a_selector" class="selector  topic_selector">
+        <select id="topic_a_selector" class="selector topic_selector">
             <option value="1" selected>Topic 1</option>
             <option value="2">Topic 2</option>
             <option value="3">Topic 3</option>
@@ -34,8 +34,8 @@
             <option value="2" selected>Topic 2</option>
             <option value="3">Topic 3</option>
         </select>       
-        <button id="word_selector" class="selector word_joke_selector">words</button>
-        <button id="joke_selector" class="selector word_joke_selector">jokes</button>
+        <button id="word_selector" class="selector word_joke_selector active" onclick="switch_word_joke_filter(0)">words</button>
+        <button id="joke_selector" class="selector word_joke_selector" onclick="switch_word_joke_filter(1)">jokes</button>
 
         <select id="size_mapping" class="selector">
             <option value="frequency">count</option>
@@ -49,7 +49,7 @@
             
         </div>
     </div>
-    
+
     <div id="content_right">
         <div id="bar_charts">
 
@@ -67,4 +67,9 @@
     </div>
 </body>
 
+<footer>
+    <p>
+        &copy; Team Dickbutt 2017
+    </p>
+</footer>
 </html>
