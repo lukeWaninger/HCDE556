@@ -6,9 +6,13 @@ body {
     background-color: rgba(241, 238, 238, 0.472);
 }
 
-.selector{
+.topic_selector {
+    padding-left: 15px;
+}
+
+.selector {
     font-family: 'Montserrat';
-    height: 50px;
+    height: 40px;
     font-size: 20px;
     background-color: transparent;
     width: 120px;
@@ -21,9 +25,9 @@ body {
     -webkit-transition: all .2s;
 }
 
-.selector:hover,
-.selector:active,
-.selector:focus {
+.word_joke_selector:hover,
+.word_joke_selector:active,
+.word_joke_selector:focus {
     box-shadow: 0px 0px 0px #3a3939;
     background-color: #007EFF;
     border-radius: 2px;
@@ -31,7 +35,7 @@ body {
     font-weight: bold;
     color: white;
 }
-.selector:hover {
+.word_joke_selector:hover {
     background-color: #FF8B00;
 }
 
