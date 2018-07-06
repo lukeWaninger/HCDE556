@@ -9,8 +9,7 @@ node_modules/
 build/
 
 # data
-src/data/*.json
-src/data/topic_files/*.json
+src/data/*
 
 # misc
 .DS_Store
