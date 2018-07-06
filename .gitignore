@@ -8,9 +8,9 @@ node_modules/
 .idea/
 build/
 
-#data
-src/data/
-src/data.zip
+# data
+src/data/*.json
+src/data/topic_files/*.json
 
 # misc
 .DS_Store
