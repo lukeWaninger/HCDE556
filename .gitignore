@@ -8,11 +8,8 @@ node_modules/
 .idea/
 build/
 
-
 #data
-src/data
-
-# production
+src/data/
 
 # misc
 .DS_Store
@@ -21,10 +18,12 @@ src/data
 .env.test.local
 .env.production.local
 
+# npm
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 build_log.txt
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
