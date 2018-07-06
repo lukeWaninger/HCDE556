@@ -1,6 +1,5 @@
-/src/data
 # dependencies
-/node_modules
+node_modules/
 
 # testing
 /coverage
@@ -9,6 +8,9 @@
 .idea/
 build/
 
+
+#data
+src/data
 
 # production
 
