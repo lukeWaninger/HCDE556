@@ -1,11 +1,11 @@
 FROM node:8.1.3
 
-RUN mkdir -p /src
-WORKDIR /src
+RUN mkdir -p /usr/src/app
+WORKDIR /user/src/app
 COPY . .
 
 EXPOSE 8080
 
 RUN npm install --silent
-RUN npm run build
-RUN npm run start
+
+CMD ["npm", "start"]
