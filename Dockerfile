@@ -1,7 +1,7 @@
 FROM node:8.1.3
 
-RUN mkdir -p /usr/src/api
-WORKDIR /usr/src/api
+RUN mkdir -p /src
+WORKDIR /src
 COPY . .
 
 EXPOSE 8080
