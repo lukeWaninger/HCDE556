@@ -1,5 +1,6 @@
 FROM node:8.11.3
 
+RUN apt-get update -y
 RUN apt-get install -y awscli
 
 RUN mkdir -p /usr/src/app
