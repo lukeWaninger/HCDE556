@@ -6,5 +6,6 @@ COPY . .
 
 EXPOSE 8080
 
+RUN npm install --silent
 RUN npm run build
 RUN npm run start
