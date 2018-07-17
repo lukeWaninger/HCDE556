@@ -21,9 +21,10 @@ export default class Main extends React.Component {
             [topicA]: ta,
             [topicB]: tb
         };
+
         // for (let i = 0; i < 50; i++) {
-        // let t = require(`./data/topic_files/topic_${i + 1}.json`);
-        // topics = [...topics, t];
+        //     let t = require(`./data/topic_files/topic_${i + 1}.json`);
+        //     topics = [...topics, t];
         // }
 
         const topicScores = require('./data/topic_scores.json');
