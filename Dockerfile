@@ -6,4 +6,5 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["node", "."]
+RUN npm run build
+RUN npm run start
