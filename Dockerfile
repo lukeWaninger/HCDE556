@@ -1,10 +1,9 @@
 FROM node:8.11.3
 
 RUN mkdir -p /usr/src/app
-RUN mkdir -p /usr/src/app/src/data
 
 WORKDIR /usr/src/app/src/data
-RUN aws s3 cp s3://elasticbeanstalk-us-east-1-701856502070/RedditJokes/data/ data/ --recursive
+RUN aws s3 cp s3://elasticbeanstalk-us-east-1-701856502070/RedditJokes/data/ /usr/src/app/src/data/ --recursive
 
 WORKDIR /usr/src/app
 COPY . .
