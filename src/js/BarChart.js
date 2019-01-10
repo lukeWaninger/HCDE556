@@ -147,7 +147,7 @@ const BarChart = Svg((node, props) => {
                 "<p><em>affinity:</em> " + data.p_topic.toFixed(5) +
                 "</br><em>count:</em> " + data.count +
                 "</br><em>affinity to all topics</em>" +
-                "</p>" + "<svg width:" + lhwidth + ";height:" + lheight + ">" +  lilHisty.html() + "</svg>"
+                "</p><svg width:" + lhwidth + ";height:" + lheight + ">" +  lilHisty.html() + "</svg>"
                 )
             
         })

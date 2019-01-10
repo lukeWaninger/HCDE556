@@ -60,7 +60,7 @@ export default class Lists extends React.PureComponent {
         let sidebar = null;
         if (this.props.bar_selection.open) {
             const selection = this.props.bar_selection;
-            const color = this.props[selection.topic + '_color'];
+            //const color = this.props[selection.topic + '_color'];
             const topic = this.props[selection.topic];
             const ids = this.fix(this.props.topics[topic].words[selection.index].joke_ids);
             const data = ids.map(id => this.idMap[id])
