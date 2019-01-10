@@ -1,10 +1,11 @@
 #topic_chart {
     position: absolute;
-    top: 670px;
-    left: 565px;
+    top: 710px;
+    left: 605px;
     -webkit-transition: opacity 1s, left .5s ease-in-out;
     transition: opacity 1s, left .5s ease-in-out;
 }
+
 .topic-bar-container {
     margin: 0;
 }
