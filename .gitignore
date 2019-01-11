@@ -1,13 +1,16 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
-/src/data
 # dependencies
-/node_modules
+node_modules/
 
 # testing
 /coverage
 
-# production
+# IDE
+.idea/
+build/
+
+# data
+src/data/*
+src/data.zip
 
 # misc
 .DS_Store
@@ -16,7 +19,13 @@
 .env.test.local
 .env.production.local
 
+# npm
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 build_log.txt
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

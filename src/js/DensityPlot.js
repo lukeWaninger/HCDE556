@@ -29,13 +29,14 @@ const Graph = Svg((node, props) => {
     });
     var layers = stack(d3.transpose(d3.range(n).map(function (i) {
         return bumpLayer(i, m);
-    }))),
-        yStackMax = d3.max(layers, function (layer) { return d3.max(layer, function (d) { return d[1]; }); });
+    })))
+    // ,
+    //    yStackMax = d3.max(layers, function (layer) { return d3.max(layer, function (d) { return d[1]; }); });
 
     var margin = { top: 40, right: 10, bottom: 20, left: 10 },
         width = (980 - margin.left - margin.right)/2 - 80,
-        height = 300 - margin.top - margin.bottom,
-        x_axis_title_height = 20;
+        height = 300 - margin.top - margin.bottom //,
+    //    x_axis_title_height = 20;
 
     var x = d3.scaleLinear()
         .domain([0, 7])
