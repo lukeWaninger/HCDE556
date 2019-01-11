@@ -1,6 +1,7 @@
 # HCDE - Visualizing Topic Models and Jokes
 Visualizing the results from LDA topic modeling on the reddit joke dataset  
 Mohammed Helal, Vivek Pagadala, Luke Waninger  
+[The live visualization](http://redditj.lukewaninger.com/ "The live visualization")
 12-11-2017  
 
 Text data is one of the most abundant sources of data available today, yet it is one of the most difficult sources to understand and gain insight from. We chose to tackle this problem in a tagteam approach of using machine learning and effective data visualization techniques to help us understand the topics of a dataset. We used a dataset scraped from Reddit’s r/jokes subreddit and implemented a topic modelling algorithm to derive joke topics, and then implemented a visualization in d3 to maximize the ability of a user to understand these topics.
