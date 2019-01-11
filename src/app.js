@@ -15,8 +15,8 @@ export default class Main extends React.Component {
     constructor(props) {
         super(props);
 
-        const topicA = 0; // change import ta above as well
-        const topicB = 2; // change import tb above as well
+        const topicA = 23; // change import ta above as well
+        const topicB = 49; // change import tb above as well
         let topics = {
             [topicA]: ta,
             [topicB]: tb

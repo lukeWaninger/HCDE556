@@ -78,7 +78,7 @@ const Graph = Svg((node, props) => {
 
     svg.attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom + 40)
-        .style("padding", "0px 0px 0px 0px")
+    //    .style("padding", "0px 0px 0px 0px")
 
     // add bars
     svg.selectAll('rect')
